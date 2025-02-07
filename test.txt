@@ -1,0 +1,14 @@
+Một cơ sở dữ liệu quản lý sinh viên được mô tả như sau:
+- SINHVIEN(MASV, HOTEN, PHAI, NGAYSINH, DIACHI, MANGANH): Mỗi sinh viên có một mã số duy nhất (MASV) 
+để phân biệt với sinh viên khác, một họ tên (HOTEN), thuộc một phái (PHAI), có một ngày sinh (NGAYSINH), 
+một địa chỉ (DIACHI) và một ngành duy nhất (MANGANH)
+- NGANH(MANGANH, TENNGANH, SOCD, TSSV): Mỗi ngành có một mã số duy nhất (MANGANH) để phân biệt với ngành 
+khác, một tên ngành (TENNGANH), SOCD cho biết số chuyên đề mà một sinh viên theo học ngành có mã ngành là
+MANGANH phải học, TSSV cho biết tổng số sinh viên đã từng theo học ngành này.
+- CHUYENDE(MACD, TENCD, SOSVTD): mỗi chuyên đề có mã duy nhất (MACD), một tên duy nhất (TENCD), SOSVTD cho 
+biết số sinh viên tối đa có thể chấp nhận được mỗi khi có một lớp mở cho chuyên đề có mã là MACD.
+- CD_NGANH(MACD, MANGANH): mỗi chuyên đề có thể được học bởi nhiều ngành, một ngành phải học nhiều chuyên 
+đề.
+- CD_MO(MACD, NAM, HOCKY): Mỗi chuyên đề được mở ra trong một học kỳ của một năm.
+- DANGKY(MASV, MACD, NAM, HOCKY): Việc đăng ký học một chuyên đề đã được mở vào một học kỳ trong một năm 
+của một sinh viên.
